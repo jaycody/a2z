@@ -3,7 +3,30 @@
 
 ----------
 
-[a2z-f16.wiki][2] --> my notes for the course
+[a2z-f16.wiki][2] --> my wiki-notes for the course
+
+### shiffman A2Z links:
+* [A2Z tutorials - video playlist](https://youtu.be/HRANU6KtNEs?list=PLRqwX-V7Uu6YrbSJBg32eTzUU50E2B8Ch)
+* [shiffman's A2Z blog](http://shiffman.net/a2z/)  
+* [A2Z homework - ITP - F16](https://github.com/shiffman/A2Z-F16/wiki)  
+* [shiffman's A2Z-F16 repo](https://github.com/shiffman/A2Z-F16)  
+* [A2Z References](https://github.com/shiffman/A2Z-F16/wiki/References)
+
+### my notes wiki
+* [a2z-f16.wiki][2] --> main page
+* [wk_1-strings](https://github.com/jaycody/a2z-f16/wiki/wk_01-strings)
+* [wk_2-regex](https://github.com/jaycody/a2z-f16/wiki/wk_02-regex)
+
+### my a2z gong-fu via gh-pages
+* [jaylab.io/a2z-f16](http://jaylab.io/a2z-f16)
+
+### vids, tuts, & articles
+* [Ultimate JavaScript Strings](https://www.youtube.com/watch?v=ot4YGBG5Img)
+
+
+------------
+
+
 
 course overview
 -----------
