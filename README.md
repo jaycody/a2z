@@ -3,8 +3,8 @@
 
 ----------
 
-[My notes wiki](https://github.com/jaycody/a2z-f16/wiki)
-[My exercises](http://jaylab.io/a2z-f16/) 
+##### [My notes wiki](https://github.com/jaycody/a2z-f16/wiki)  
+##### [My exercises](http://jaylab.io/a2z-f16/) 
 
 
 ### shiffman A2Z links:
