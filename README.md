@@ -3,6 +3,10 @@
 
 ----------
 
+[My notes wiki](https://github.com/jaycody/a2z-f16/wiki)
+[My exercises](http://jaylab.io/a2z-f16/) 
+
+
 ### shiffman A2Z links:
 * [A2Z tutorials - video playlist](https://youtu.be/HRANU6KtNEs?list=PLRqwX-V7Uu6YrbSJBg32eTzUU50E2B8Ch)
 * [shiffman's A2Z blog](http://shiffman.net/a2z/)  
