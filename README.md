@@ -3,8 +3,15 @@
 
 ----------
 
+##### setup
+- to run locally:  
+`http-server` in root
+- to serve from github's gh-pages, push to gh-pages branch
+`git checkout gh-pages`  
+- Add each exercise to the [index page](http://jaylab.io/a2z-f16)
+
 ##### [My notes wiki](https://github.com/jaycody/a2z-f16/wiki)  
-##### [My exercises](http://jaylab.io/a2z-f16/) 
+##### [My exercises](http://jaylab.io/a2z-f16/)
 
 
 ### shiffman A2Z links:
@@ -68,7 +75,7 @@ This course focuses on programming strategies and techniques behind procedural a
     * alternation
     * capturing groups and back reference
   * Regex in atom editor
-  * Regex in JS: 
+  * Regex in JS:
       * Regex: `test()`, `exec()`
       * String: `match()`
   * Splitting with regex: `split()`
