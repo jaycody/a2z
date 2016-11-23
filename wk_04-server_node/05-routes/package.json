@@ -1,0 +1,19 @@
+{
+  "name": "05-routes",
+  "version": "1.0.0",
+  "description": "routes experiment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "routes"
+  ],
+  "author": "jstephens",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
