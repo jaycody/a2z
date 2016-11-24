@@ -1,1 +1,72 @@
-<h1>test express</h1>
+<h1>wk_04-server_node</h1>
+<h3>05-routes</h3>
+<hr>
+
+<h2>usage:</h2>
+
+<code>
+$ npm install <br>
+$ node server.js <br>
+</code>
+<br>
+<br>
+
+<ul>
+  <li><a href="http://localhost:3000/flower">localhost:3000/flower</a></li>
+  <li><a href="http://localhost:3000/search/sunflowers">localhost:3000/search/sunflowers</a></li>
+  <li><a href="http://localhost:3000/count/redlinen/200">localhost:3000/count/redlinen/200</a></li>
+</ul>
+
+<h3>markdown in html?  can I haz?</h3>
+
+<code>
+## ROUTES with Express
+#### Request-Response Protocol
+##### GET request includes CALLBACK
+Callback triggered when the route is accessed
+```
+app.get('/someroute', sayHello);
+
+function sayHello(request, reponse){
+  response.send('Say Hello');
+}
+```
+
+#### request.params PROPERTY
+Use `params` to access search terms in the url, those that follow ':'
+```
+app.get('/someroute/:entername', sayHello);
+
+function sayHello(request, reponse){
+  var data = request.params;
+  var name = data.entername;
+  response.send('Say Hello to ' + name);
+}
+```
+
+#### request.query PROPERTY
+`var name = request.query.variableFoo`
+Use `query` to access data associated with a user's `request`
+`http://server.com/someroute?name=Jason`
+The value of `name` can be accessed via `query` property of `request`
+
+```
+// given http://server.com/someroute?name=Jason
+
+app.get('/someroute', sayHello);
+
+function sayHello(request, response){
+  var name = request.query.name;
+  response.send("Hello " + name);
+}
+```
+
+### URL query string vs REST API
+##### REST
+> Representational_state_transfer)
+
+- Instead of a query string `../someroute?name=Jason`, the API pulls out command and parameters forom the route itself.
+- 'variables' are notated by a ':' in the URL
+- variables are accessed via the `params` property
+`app.get('/hello/:name/:age', sayHello)`
+</code>
