@@ -1,17 +1,19 @@
-/* Objective of this API
+/* This API features:
 - look at all words
 - add a word
-- search for words
-*/
-// step1 for creating an API: expose the data
-// make an api request to my api
+- search for a word
 
+TIPS:
+// step1 for creating an API: expose the data
+// make an api request to my own api
 // take in data from the user and put it into the objecta as a key value pair
-//WRITE ALL REPLIES AS OBJECTS
+// WRITE ALL REPLIES AS OBJECTS
 // step1 of the API: EXPOSE THE DATA
 // Express auto formats output as JSON
 // get request appended with '?' means last parameter is OPTIONAL
 // my basic sentiment analysis data
+*/
+
 var linkString = "<h3>API requests:</h3><ul>" +
 "<li><a href='http://localhost:3000'>localhost:3000</a></li>" +
 "<li><a href='http://localhost:3000/all'>localhost:3000/all</a></li>" +
