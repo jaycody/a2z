@@ -1,0 +1,11 @@
+{
+  "colorR": 255,
+  "colorG": 255,
+  "colorB": 255,
+  "alpha": 255,
+  "theta": 180,
+  "velocity": 10,
+  "acceleration": 1,
+  "particles": 300,
+  "show_config": "<a href='http://localhost:3000/show_config'>localhost:3000/show_config</a>"
+}

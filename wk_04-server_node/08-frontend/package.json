@@ -1,0 +1,14 @@
+{
+  "name": "08-frontend",
+  "version": "1.0.0",
+  "description": "front end for API exercise",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jstephens",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
