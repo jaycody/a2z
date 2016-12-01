@@ -86,13 +86,46 @@ function searchConfig(request, response) {
 //////////////////////////////////
 // /update_config/<existing_key>/<value> -->
 //    update value(s) in config
-app.get('/update_config/:var_to_update/:new_value', updateConfigVar);
+app.get('/update_config/:var_to_update/:new_value?', updateConfigVar);
 
 function updateConfigVar(request, response) {
-  console.log('here it is');
-  var reply = 'here it is';
+  var var_to_update = request.params.var_to_update;
+  var new_value     = Number(request.params.new_value);
+  var reply;
+  console.log("\n...searching for config_var: '" + var_to_update + "'");
+
+  // check for non-existent var_to_update
+  if (!config[var_to_update]){
+    reply = {
+      alert: "config_var: '" + var_to_update + "' does not exist in config.json "
+    }
+    console.log(reply.alert);
+  }
+
+  // check for invalid input
+  else if (isNaN(new_value) || (!typeof(new_value) === 'number')) {
+    reply = {
+      alert: request.params.new_value + " is not a valid input"
+    }
+    console.log(reply.alert);
+  }
+
+  // if var_to_update exists AND if new_value is valid, then
+  else {
+    var previous_value = config[var_to_update];
+    config[var_to_update] = new_value;
+    reply = {
+      msg: "config_var: '" + var_to_update + "' has new value: " + config[var_to_update],
+      var_to_update: var_to_update,
+      new_value: new_value,
+      previous_value: previous_value
+    }
+    console.log(reply.msg);
+  }
+
   response.send(reply);
 }
+//////////////////////////////////
 
 
 
