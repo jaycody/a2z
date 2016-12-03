@@ -129,11 +129,61 @@ function updateConfigVar(request, response) {
 
 
 
+//////////////////////////////////
+// /update_config/add/<new_key>/<new_value> -->
+//    add new config_var
+app.get('/update_config/add/:var_to_add/:val_to_add', addConfigVar);
 
-// add key/value to config
+function addConfigVar(request, response) {
+  var var_to_add = request.params.var_to_add;
+  var val_to_add = Number(request.params.val_to_add);
+  var reply;
+
+  config[var_to_add] = val_to_add;
+  var configToString = JSON.stringify(config, null, 2);
+  //to file config.json, wite configToString, then callback with finishWrite
+  fs.writeFile("config.JSON", configToString, finishWrite);
+
+  function finishWrite() {
+    console.log('added config_var: ' + var_to_add);
+    reply = {
+      var_added: var_to_add,
+      val_given: val_to_add
+    }
+    response.send(reply);
+  }
+}
+//////////////////////////////////
 
 
 
+
+
+/*
+//////////////////////////////////////////
+// add new word to json
+app.get('/add_to_json/:next_word', addToJson);
+
+function addToJson(request, response) {
+  var data = request.params;
+  var word = data.next_word;
+  var reply;
+  words[word] = 10;
+  var wordsToString = JSON.stringify(words, null, 2);
+  fs.writeFile("words.json", wordsToString, finishWrite);  //to file, with info, then callback
+
+  function finishWrite() {
+    console.log('all set');
+    reply = {
+      word: word,
+      score: words[word],
+      status: 'success'
+    }
+    response.send(reply);
+  }
+}
+//////////////////////////////////////////
+*/
 
 
 /*

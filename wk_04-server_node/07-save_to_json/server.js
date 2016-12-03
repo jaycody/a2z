@@ -39,14 +39,18 @@ function listening() {
 app.use(express.static('public'));
 
 //////////////////////////////////////////
-// JSON db
+// show JSON db
 app.get('/alljson', showAllJson);
-app.get('/add_to_json/:next_word', addToJson);
+
 
 // localhost:3000/alljson
 function showAllJson(request, response) {
   response.send(words);
 }
+
+//////////////////////////////////////////
+// add new word to json
+app.get('/add_to_json/:next_word', addToJson);
 
 function addToJson(request, response) {
   var data = request.params;
