@@ -19,3 +19,13 @@ function listening() {
   console.log("server running on localhost/3000")
 }
 ///////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////
+// load and parse config.json
+//    - use node's fs module
+var fs      = require("fs");
+var data    = fs.readFileSync("config.json");
+var config  = JSON.parse(data);
+console.log(config);
