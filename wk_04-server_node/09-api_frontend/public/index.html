@@ -1,45 +1,50 @@
-<h3>wk_04-server_node</h3>
-<h5>09-api_frontend</h5>
+<!DOCTYPE html>
+  <html>
 
-<hr />
+    <head>
+      <meta charset="UTF-8">
+      <title>09-API_frontend</title>
+      <script src="../p5/p5.js" type="text/javascript"></script>
 
-<h2>API</h2>
-<table border="1" cellpadding="5" cellspacing="5">
-  <tr>
-    <th>API</th>
-    <th>Function</th>
-    <th>example</th>
-  </tr>
-  <tr>
-    <td>/show_config</td>
-    <td>show key/values in config.json</td>
-    <td><a href='http://localhost:3000/show_config'>localhost:3000/show_config</a></td>
-  </tr>
-  <tr>
-    <td>/search_config/search_term</td>
-    <td>search for key and retrieve its value in config.json</td>
-  </tr>
-  <tr>
-    <td>/update_config/existing_key/new_value</td>
-    <td>update value for an existing key in config.json</td>
-  </tr>
-  <tr>
-    <td>/update_config/new_key/new_value</td>
-    <td>add new key/value to config.json</td>
-  </tr>
-</table>
-<!-- table, table row (tr), table heading (th), table data (td) -->
+      <script src="../p5/p5.dom.js" type="text/javascript"></script>
 
-<p>save new json?</p>
+      <script src="../p5/p5.sound.js" type="text/javascript"></script>
 
-<h2>usage:</h2>
+      <script src="sketch.js" type="text/javascript"></script>
+    </head>
 
-<br>
-<br>
+    <body>
+      <h3>wk_04-server_node</h3>
+      <h5>09-api_frontend</h5>
 
-<h4>// make an api request to my api</h4>
+      <hr />
 
-<ul>
-  <li><a href='http://localhost:3000/show_config'>localhost:3000/show_config</a></li>
+      <h2>API</h2>
+      <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
+          <th>API</th>
+          <th>Function</th>
+          <th>example</th>
+        </tr>
+        <tr>
+          <td>/show_config</td>
+          <td>show key/values in config.json</td>
+          <td><a href='http://localhost:3000/show_config'>localhost:3000/show_config</a></td>
+        </tr>
+        <tr>
+          <td>/search_config/search_term</td>
+          <td>search for key and retrieve its value in config.json</td>
+        </tr>
+        <tr>
+          <td>/update_config/existing_key/new_value</td>
+          <td>update value for an existing key in config.json</td>
+        </tr>
+        <tr>
+          <td>/update_config/new_key/new_value</td>
+          <td>add new key/value to config.json</td>
+        </tr>
+      </table>
+      <!-- table, table row (tr), table heading (th), table data (td) -->
+    </body>
 
-</ul>
+  </html>
