@@ -57,6 +57,10 @@ function searchConfig(request, response) {
     reply = {
       msg: config_var + " has value: " + config[config_var]
     }
+  } else {
+    reply = {
+      msg: config_var + " does not exist in config.json"
+    }
   }
   response.send(reply);
 }
