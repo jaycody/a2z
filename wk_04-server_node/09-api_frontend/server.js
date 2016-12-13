@@ -42,3 +42,22 @@ function showConfig(request, response) {
   response.send(config);
 }
 ///////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////
+// create API route to search and display specific config_var, else alert
+//   /search_config/<search_for_var> -->
+app.get("/search_config/:search_for_var", searchConfig);
+
+function searchConfig(request, response) {
+  var config_var = request.params.search_for_var;
+  var reply;
+
+  if (config[config_var]) {
+    reply = {
+      msg: config_var + " has value: " + config[config_var]
+    }
+  }
+  response.send(reply);
+}
+///////////////////////////////////////////////////
