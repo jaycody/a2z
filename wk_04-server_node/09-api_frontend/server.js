@@ -69,11 +69,12 @@ function searchConfig(request, response) {
 ///////////////////////////////////////////////////
 // API updates specific config_var
 //   /update_config/<config_var>/<value> -->
-app.get("/update_config/:config_var/:value", updateConfigVar);
+//   (see 08-frontend for example of input validation here)
+app.get("/update_config/:config_var/:new_value", updateConfigVar);
 
 function updateConfigVar(request, response) {
   var config_var  = request.params.config_var;
-  var new_value   = request.params.value;
+  var new_value   = Number(request.params.new_value);
   var reply;
 
   if (config[config_var]) {
@@ -81,6 +82,31 @@ function updateConfigVar(request, response) {
     reply = {
       msg: config_var + " updated to: " + new_value
     }
+  } else {
+    reply = {
+      msg: config_var + " does not exist in config.json"
+    }
   }
   response.send(reply);
+}
+///////////////////////////////////////////////////
+// API add new config_var and its value
+//    /update_config/add/<new_config_var>/<new_value>
+app.get("/update_config/add/:new_config_var/:new_value", addConfigVar);
+
+function addConfigVar(request, response) {
+  var new_config_var = request.params.new_config_var;
+  var new_value      = Number(request.params.new_value);
+  var reply;
+
+  config[new_config_var] = new_value;
+  var stringifiedConfig = JSON.stringify(config, null, 2);
+  fs.writeFile("config.json", stringifiedConfig, finishWrite);
+
+  function finishWrite() {
+    reply = {
+      msg: new_config_var + " : " + new_value + " added to config.json"
+    }
+    response.send(reply);
+  }
 }

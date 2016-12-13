@@ -1,5 +1,7 @@
 {
   "colorR": 255,
-  "colorG": 255,
-  "colorB": 255
+  "colorG": 100,
+  "colorB": 255,
+  "colorNPN": 10000,
+  "colorGHB": 5000
 }
