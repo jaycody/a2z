@@ -29,3 +29,16 @@ var fs      = require("fs");
 var data    = fs.readFileSync("config.json");
 var config  = JSON.parse(data);
 console.log(config);
+///////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////
+// create API route to show config file
+//   /show_config -->
+app.get("/show_config", showConfig);
+
+function showConfig(request, response) {
+  response.send(config);
+}
+///////////////////////////////////////////////////
