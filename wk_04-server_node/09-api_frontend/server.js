@@ -34,7 +34,7 @@ console.log(config);
 
 
 ///////////////////////////////////////////////////
-// create API route to show config file
+// API route shows config file
 //   /show_config -->
 app.get("/show_config", showConfig);
 
@@ -45,7 +45,7 @@ function showConfig(request, response) {
 
 
 ///////////////////////////////////////////////////
-// create API route to search and display specific config_var, else alert
+// API route searchs and displays specific config_var, else alert
 //   /search_config/<search_for_var> -->
 app.get("/search_config/:search_for_var", searchConfig);
 
@@ -65,3 +65,22 @@ function searchConfig(request, response) {
   response.send(reply);
 }
 ///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// API updates specific config_var
+//   /update_config/<config_var>/<value> -->
+app.get("/update_config/:config_var/:value", updateConfigVar);
+
+function updateConfigVar(request, response) {
+  var config_var  = request.params.config_var;
+  var new_value   = request.params.value;
+  var reply;
+
+  if (config[config_var]) {
+    config[config_var] = new_value;
+    reply = {
+      msg: config_var + " updated to: " + new_value
+    }
+  }
+  response.send(reply);
+}
