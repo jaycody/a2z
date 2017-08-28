@@ -1,5 +1,5 @@
 # a2z-f16
-[JavaScript for text-based data, Shiffman, ITP, Fall 2016 on github][1]
+[JavaScript for text-based data, Shiffman, ITP, Fall 2016 on github][1]  
 [Programming with Text - shiffman video playlist on youtube][3]
 
 ----------
