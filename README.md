@@ -1,5 +1,6 @@
 # a2z-f16
-[JavaScript for text-based data, Shiffman, ITP, Fall 2016][1]
+[JavaScript for text-based data, Shiffman, ITP, Fall 2016 on github][1]
+[Programming with Text - shiffman video playlist on youtube][3]
 
 ----------
 
@@ -165,3 +166,4 @@ This course focuses on programming strategies and techniques behind procedural a
 
 [1]:https://github.com/shiffman/A2Z-F16
 [2]:https://github.com/jaycody/a2z-f16/wiki
+[3]:https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YrbSJBg32eTzUU50E2B8Ch
