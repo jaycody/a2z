@@ -1,4 +1,4 @@
-# a2z-f16
+# a2z
 [JavaScript for text-based data, Shiffman, ITP, Fall 2016 on github][1]  
 [Programming with Text - shiffman video playlist on youtube][3]
 
@@ -9,10 +9,10 @@
 `http-server` in root
 - to serve from github's gh-pages, push to gh-pages branch
 `git checkout gh-pages`  
-- Add each exercise to the [index page](http://jaylab.io/a2z-f16)
+- Add each exercise to the [index page](http://jaylab.io/a2z)
 
-##### [My notes wiki](https://github.com/jaycody/a2z-f16/wiki)  
-##### [My exercises](http://jaylab.io/a2z-f16/)
+##### [My notes wiki](https://github.com/jaycody/a2z/wiki)  
+##### [My exercises](http://jaylab.io/a2z/)
 
 
 ### shiffman A2Z links:
@@ -24,11 +24,11 @@
 
 ### my notes wiki
 * [a2z-f16.wiki][2] --> main page
-* [wk_1-strings](https://github.com/jaycody/a2z-f16/wiki/wk_01-strings)
-* [wk_2-regex](https://github.com/jaycody/a2z-f16/wiki/wk_02-regex)
+* [wk_1-strings](https://github.com/jaycody/a2z/wiki/wk_01-strings)
+* [wk_2-regex](https://github.com/jaycody/a2z/wiki/wk_02-regex)
 
 ### my a2z gong-fu via gh-pages
-* [jaylab.io/a2z-f16](http://jaylab.io/a2z-f16)
+* [jaylab.io/a2z](http://jaylab.io/a2z)
 
 ### vids, tuts, & articles
 * [Ultimate JavaScript Strings](https://www.youtube.com/watch?v=ot4YGBG5Img)
