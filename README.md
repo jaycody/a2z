@@ -23,7 +23,7 @@
      ctrl-alt-5: launch live server on port 5000   
      ctrl-alt-8: launch live server on port 8000   
      ctrl-alt-9: launch live server on port 9000   
-     ```
+```
      
 ##### serve from github pages `gh-pages`
 1. create gh-pages branch
