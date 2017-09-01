@@ -15,7 +15,7 @@
 - run `http-server` in root OR 
 - use Atoms atom-live-server
      - usage:
-     ```
+```
      ctrl-alt-l: launch live server on port 3000  
      ctrl-alt-q: stop live server 
      ctrl-alt-3: launch live server on port 3000   
