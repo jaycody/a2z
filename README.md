@@ -12,7 +12,7 @@
 
 
 ##### to run locally:  
-- run `http-server` in root OR 
+- run `http-server` in root along with LiveReload app and Chrome extension OR
 - use Atoms atom-live-server
      - usage:
 ```
