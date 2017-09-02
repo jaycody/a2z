@@ -4,12 +4,38 @@
 
 ----------
 
-##### setup
-- to run locally:  
-`http-server` in root
-- to serve from github's gh-pages, push to gh-pages branch
-`git checkout gh-pages`  
-- Add each exercise to the [index page](http://jaylab.io/a2z)
+##### requires
+- [http-server via npm][4]
+     - `npm install http-server -g`
+- [node.js install for macos][5]
+- Atom
+
+
+##### to run locally:  
+- run `http-server` in root along with LiveReload app and Chrome extension OR
+- use Atoms atom-live-server
+     - usage:
+```
+     ctrl-alt-l: launch live server on port 3000  
+     ctrl-alt-q: stop live server 
+     ctrl-alt-3: launch live server on port 3000   
+     ctrl-alt-4: launch live server on port 4000   
+     ctrl-alt-5: launch live server on port 5000   
+     ctrl-alt-8: launch live server on port 8000   
+     ctrl-alt-9: launch live server on port 9000   
+```
+     
+##### serve from github pages `gh-pages`
+1. create gh-pages branch
+2. delete master
+3. make gh-pages the primary remote
+4. push to gh-pages branch
+5. `git checkout gh-pages`  
+
+
+#### Issues: 
+- [] generate index page via js.
+     - current workaround is to add each exercise to the [index page](http://jaylab.io/a2z)
 
 ##### [My notes wiki](https://github.com/jaycody/a2z/wiki)  
 ##### [My exercises](http://jaylab.io/a2z/)
@@ -23,7 +49,7 @@
 * [A2Z References](https://github.com/shiffman/A2Z-F16/wiki/References)
 
 ### my notes wiki
-* [a2z-f16.wiki][2] --> main page
+* [a2z.wiki][2] --> main page
 * [wk_1-strings](https://github.com/jaycody/a2z/wiki/wk_01-strings)
 * [wk_2-regex](https://github.com/jaycody/a2z/wiki/wk_02-regex)
 
@@ -167,3 +193,5 @@ This course focuses on programming strategies and techniques behind procedural a
 [1]:https://github.com/shiffman/A2Z-F16
 [2]:https://github.com/jaycody/a2z-f16/wiki
 [3]:https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YrbSJBg32eTzUU50E2B8Ch
+[4]:https://www.npmjs.com/package/http-server
+[5]:https://nodejs.org/en/#download
